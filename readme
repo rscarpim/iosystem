@@ -10,7 +10,6 @@ Password:
 
 /* Database Integration. */
 
-
 CREATE TABLE `tb_users` (
   `u_id` int(11) NOT NULL AUTO_INCREMENT,
   `u_login` varchar(255) DEFAULT NULL,
