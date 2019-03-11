@@ -5,3 +5,30 @@ User name:
   rscarpim@hotmail.com
 Password:
   12345
+
+
+
+/* Database Integration. */
+
+```sql
+CREATE TABLE `tb_users` (
+  `u_id` int(11) NOT NULL AUTO_INCREMENT,
+  `u_login` varchar(255) DEFAULT NULL,
+  `u_password` varchar(255) DEFAULT NULL,
+  `u_name_first` varchar(45) DEFAULT NULL,
+  `u_name_last` varchar(45) DEFAULT NULL,
+  `u_email` varchar(255) DEFAULT NULL,
+  `u_company_id` int(11) DEFAULT NULL,
+  `u_level_id` int(11) DEFAULT NULL,
+  `u_language_id` int(11) DEFAULT '0',
+  PRIMARY KEY (`u_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE `tb_users_language` (
+  `lan_id` int(11) NOT NULL AUTO_INCREMENT,
+  `lan_description` varchar(45) DEFAULT NULL,
+  `lan_prefix` varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`lan_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=latin1;
+```
