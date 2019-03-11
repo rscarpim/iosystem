@@ -2,7 +2,7 @@ To Access the User Account, you need the following credentials.
 
 
 User name:
-  rscarpim@hotmail.com
+  master@hotmail.com
 Password:
   12345
 
@@ -29,4 +29,9 @@ CREATE TABLE `tb_users_language` (
   `lan_prefix` varchar(10) DEFAULT NULL,
   PRIMARY KEY (`lan_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=latin1;
+
+
+insert into tb_users( u_login, u_password, u_name_first, u_name_last, u_email, u_company_id, u_level_id, u_language_id)
+VALUES
+('master@hotmail.com', '$2y$12$bEmG.WG8EaqVVSURu0VbRuc6XpInWBSrLeb9mKBhE/msaSYBOGDTm', 'Master', NULL, NULL, '1', '1', '1');
 
