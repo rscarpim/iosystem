@@ -60,7 +60,7 @@ trait Read {
 	private function whereArgs($num_args, $args) {
 
 		if ($num_args < 2) {
-			throw new \Exception('Opa, algo errado aconteceu, o where precisa de no mínimo 2 argumentos');
+			throw new \Exception('Ooops, only 2 arguments are allowed.');
 		}
 
 		if ($num_args == 2) {
@@ -76,7 +76,7 @@ trait Read {
 		}
 
 		if ($num_args > 3) {
-			throw new \Exception('Opa, algo errado aconteceu, o where não pode ter mais que 3 argumentos');
+			throw new \Exception('Ooops, only 3 arguments are allowed.');
 		}
 
 		return [
