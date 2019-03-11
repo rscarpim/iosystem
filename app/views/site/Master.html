@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" type="text/css" href="{{ FSiteURL() }}/assets/css/site/Master.css">
+
+    
+
+    <title>{{ Title }}</title>
+</head>
+<body>
+
+    <header>
+    
+        {{ include('includes/TopNavbar.html') }}
+    </header>
+
+
+
+    <div id="div-top">
+    
+        <div class="row">
+    
+            <div class="container">
+    
+                <div class="col s12 m12 l12 center">
+    
+                    <h3 class="heading-primary">Welcome</h3>                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <main>
+
+        <div class="container">
+        
+            {% block master %}{% endblock %}
+        </div>
+    </main>
+
+
+ 
+
+
+    <footer>
+
+        {% include('includes/Footer.html') %}
+    </footer>
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+.gradient-45deg-indigo-purple {
+    background: #303f9f;
+    background: -webkit-linear-gradient(45deg, #303f9f, #7b1fa2) !important;
+    background: -moz- oldlinear-gradient(45deg, #303f9f, #7b1fa2) !important;
+    background: -o-linear-gradient(45deg, #303f9f, #7b1fa2) !important;
+    background: linear-gradient(45deg, #303f9f, #7b1fa2) !important;
+}
+
+
+
+/* Top Navbar. */
+nav.top-nav {
+    height: 110px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 1px solid rgba(0,0,0,0.14);
+    background-color: transparent;
+}
+
+
+
+
+.navbar .no-shadow {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+/* Side Nav. */
+ul.sidenav.sidenav-fixed {
+    overflow: hidden;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-right: 1px solid rgba(0,0,0,0.14);
+}
+
+
+#nav-mobile .logo {
+    color: #777;
+    margin-top: -1px;
+    border-bottom: 1px solid rgba(0,0,0,0.14);
+    -webkit-transition: margin .25s ease;
+    transition: margin .25s ease;
+}

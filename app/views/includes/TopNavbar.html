@@ -1,0 +1,66 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<div class="navbar-fixed">
+
+    <nav class="gradient-45deg-deep-grey">
+
+        <div class="container">
+
+            <div class="nav-wrapper">
+
+                <a href="#" data-target="mobile" class="sidenav-trigger">
+
+                    <i class="material-icons">menu</i>
+                </a>              
+
+               
+
+                <ul class="hide-on-med-and-down">
+
+                    <li>
+
+                        <h4 class="flow-text black-text" href="/" style="font-size: 18px;">IO System</h4>
+                    </li>
+
+                    <li>
+
+                        <a class="orange-text" href="/">Home</a>
+                    </li>
+
+                    <li>
+                    
+                        <a class="orange-text" href="/Events">Events</a>
+                    </li>
+                    
+
+
+                    <!-- Usuario nao Logado. -->
+                    {% if LogdUser() == false %}
+
+
+                        <li class="right">
+
+                            <a class="text-background" href="/login">Login</a>
+                        </li>
+                        
+                        
+                    {% else %}
+
+                        
+
+                        <li class="right">
+                        
+                            <a class="text-background" href="/LogOut">LogOut</a>
+                        </li>
+
+                        <li class="right">
+                        
+                            <a class="text-background" href="">Dashboard</a>
+                        </li>
+                    
+                    {% endif %}
+                </ul>                
+            </div>
+        </div>
+    </nav>
+</div>

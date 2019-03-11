@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="{{ FSiteURL() }}/assets/css/admin/master.css">
+
+    <link rel="stylesheet" type="text/css" href="{{ FSiteURL() }}/assets/css/admin/styles.css">
+
+    <link rel="stylesheet" type="text/css" href="{{ FSiteURL() }}/assets/css/admin/dashboard-modern.css">
+    <link rel="stylesheet" type="text/css" href="{{ FSiteURL() }}/assets/css/admin/page-painel.css">
+
+    <title>{{ Title }}</title>
+</head>
+
+<body>
+
+    {# Header Section #}
+    {{ include('admin/includes/header.html') }}
+
+
+
+    {# Aside Section #}
+    {{ include('admin/includes/aside.html') }}
+
+
+   
+    {% block master %}{% endblock %}
+        
+
+
+    {# Footer Section #}
+    {{ include('admin/includes/footer.html') }}
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+    <script src="{{ FSiteURL() }}/assets/js/admin/master.js"></script>
+
+    <script src="../../../vendor/data-tables/js/jquery.dataTables.min.js"  type="text/javascript"></script>
+</body>
+
+</html>
