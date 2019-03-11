@@ -10,7 +10,7 @@ Password:
 
 /* Database Integration. */
 
-```sql
+
 CREATE TABLE `tb_users` (
   `u_id` int(11) NOT NULL AUTO_INCREMENT,
   `u_login` varchar(255) DEFAULT NULL,
@@ -31,4 +31,4 @@ CREATE TABLE `tb_users_language` (
   `lan_prefix` varchar(10) DEFAULT NULL,
   PRIMARY KEY (`lan_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=latin1;
-```
+
