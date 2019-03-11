@@ -22,8 +22,8 @@ CREATE TABLE `tb_users` (
   `u_language_id` int(11) DEFAULT '0',
   PRIMARY KEY (`u_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=latin1;
-
-
+```
+```mysql
 CREATE TABLE `tb_users_language` (
   `lan_id` int(11) NOT NULL AUTO_INCREMENT,
   `lan_description` varchar(45) DEFAULT NULL,
