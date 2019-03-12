@@ -18,7 +18,7 @@ class CompanyController extends Controller{
         $this->Model = new CompanyModel;
     }
 
-    /* Retorna todos os Dados da Compania Atraves do ID da Mesma*/
+    /* Bring all Data from table Company*/
     public function FGetCompanyData(){
 
         return print_r(json_encode($this->Model->select()->first()));
